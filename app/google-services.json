@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "937637891271",
+    "firebase_url": "https://getmethere-unique.firebaseio.com",
+    "project_id": "getmethere-unique",
+    "storage_bucket": "getmethere-unique.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937637891271:android:4c28a794e2e88d31",
+        "android_client_info": {
+          "package_name": "com.corelabsplus.getmethere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937637891271-qrb9b033i18j76dbbhmopelme0abqkn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.corelabsplus.getmethere",
+            "certificate_hash": "bf2702470bb5ad816e62602d0c9b224bcfc200f8"
+          }
+        },
+        {
+          "client_id": "937637891271-qe9ppakq9n74mkobnci8b2dmhvg5otuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1VPWIylrJ0FpBtSFuP3qTkl623XEjFlY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937637891271-qe9ppakq9n74mkobnci8b2dmhvg5otuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

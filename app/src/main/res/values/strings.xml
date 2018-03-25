@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GetMeThere</string>
+    <string name="the_name">Get Me There</string>
+    <string name="slogan">Your journey, our priority</string>
+    <string name="welcome_note">We are so excited to have you here! We\'ll make your journey experience the best. Please enter your phone number to continue.</string>
+    <string name="facebook_app_id">2065781236770655</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

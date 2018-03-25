@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.corelabsplus.getmethere.activities.SelectModeActivity"
+    android:background="@color/colorAccent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:background="@color/colorPrimary"
+            app:title="Select mode of transportation"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/public_transport"
+            android:background="@color/colorWhite"
+            android:layout_margin="@dimen/fab_margin">
+
+            <ImageView
+                android:id="@+id/bus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/bus_marker"/>
+            <TextView
+                android:id="@+id/public_transport_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bus_icon"
+                android:layout_margin="@dimen/fab_margin"
+                android:text="Public transport"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/odemand_transport"
+            android:background="@color/colorWhite"
+            android:layout_margin="@dimen/fab_margin">
+
+            <ImageView
+                android:id="@+id/cab_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/cab_marker"/>
+            <TextView
+                android:id="@+id/ondemand_transport_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cab_icon"
+                android:layout_margin="@dimen/fab_margin"
+                android:text="On demand transport"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/walk_transport"
+            android:background="@color/colorWhite"
+            android:layout_margin="@dimen/fab_margin">
+
+            <ImageView
+                android:id="@+id/walk_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/person_marker"/>
+            <TextView
+                android:id="@+id/walk_transport_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/walk_icon"
+                android:layout_margin="@dimen/fab_margin"
+                android:text="Walking"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
