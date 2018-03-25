@@ -325,7 +325,7 @@ public class CabsActivity extends AppCompatActivity implements OnMapReadyCallbac
         //Toast.makeText(this, String.valueOf(restaurants.size()), Toast.LENGTH_SHORT).show();
         for (int i = 0; i < buses.size(); i++) {
             MarkerOptions options = new MarkerOptions()
-                    .title(buses.get(i).plateNumber + "\n" + buses.get(i).Agency)
+                    .title(buses.get(i).Agency)
                     .position(new LatLng(buses.get(i).currentLocation.getLatitude(), buses.get(i).currentLocation.getLongitude()))
                     .visible(true)
                     .icon(cabMarker)
