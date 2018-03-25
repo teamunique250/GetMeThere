@@ -39,7 +39,8 @@
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.SplashActivity" />
         <activity android:name=".activities.SelectModeActivity" />
-        <activity android:name=".activities.BusesActivity"></activity>
+        <activity android:name=".activities.BusesActivity" />
+        <activity android:name=".activities.CabsActivity"></activity>
     </application>
 
 </manifest>

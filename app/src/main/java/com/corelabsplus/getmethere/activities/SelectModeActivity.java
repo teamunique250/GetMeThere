@@ -28,5 +28,13 @@ public class SelectModeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        onDemandT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelectModeActivity.this, CabsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
