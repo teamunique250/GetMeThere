@@ -133,43 +133,43 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onStart();
         //Toast.makeText(MapsActivity.this, "Changed", Toast.LENGTH_SHORT).show();
 
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                buses.clear();
-
-//                GETTING BUSSES
-                for (DataSnapshot busSnapshot : dataSnapshot.child(BUSES).getChildren()){
-                    String plate, agency,  dest, origin, lat, lng;
-                    MLatLng mLatLng;
-                    int seats;
-
-                    plate = busSnapshot.child("plateNumber").getValue().toString();
-                    agency = busSnapshot.child("Agency").getValue().toString();
-                    seats = Integer.parseInt(String.valueOf(busSnapshot.child("seats").getValue()));
-                    dest = busSnapshot.child("destination").getValue().toString();
-                    origin = busSnapshot.child("origin").getValue().toString();
-                    lat = busSnapshot.child("currentLocation").child("latitude").getValue().toString();
-                    lng = busSnapshot.child("currentLocation").child("longitude").getValue().toString();
-
-                    mLatLng = new MLatLng(Double.parseDouble(lat), Double.parseDouble(lng));
-                    Bus theBus = new Bus(plate, agency, origin, dest, seats, mLatLng);
-                    buses.add(theBus);
-                    //Toast.makeText(MapsActivity.this, buses.get(0).Agency, Toast.LENGTH_SHORT).show();
-                }
-
-                setMarkers();
+//        databaseReference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                buses.clear();
+//
+////                GETTING BUSSES
+//                for (DataSnapshot busSnapshot : dataSnapshot.child(BUSES).getChildren()){
+//                    String plate, agency,  dest, origin, lat, lng;
+//                    MLatLng mLatLng;
+//                    int seats;
+//
+//                    plate = busSnapshot.child("plateNumber").getValue().toString();
+//                    agency = busSnapshot.child("Agency").getValue().toString();
+//                    seats = Integer.parseInt(String.valueOf(busSnapshot.child("seats").getValue()));
+//                    dest = busSnapshot.child("destination").getValue().toString();
+//                    origin = busSnapshot.child("origin").getValue().toString();
+//                    lat = busSnapshot.child("currentLocation").child("latitude").getValue().toString();
+//                    lng = busSnapshot.child("currentLocation").child("longitude").getValue().toString();
+//
+//                    mLatLng = new MLatLng(Double.parseDouble(lat), Double.parseDouble(lng));
+//                    Bus theBus = new Bus(plate, agency, origin, dest, seats, mLatLng);
+//                    buses.add(theBus);
+//                    //Toast.makeText(MapsActivity.this, buses.get(0).Agency, Toast.LENGTH_SHORT).show();
+//                }
+//
+//                setMarkers();
 
 
                 //Toast.makeText(MapsActivity.this, String.valueOf(buses.size()), Toast.LENGTH_SHORT).show();
 
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(MapsActivity.this, "Unknown error", Toast.LENGTH_SHORT).show();
-            }
-        });
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//                Toast.makeText(MapsActivity.this, "Unknown error", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override
